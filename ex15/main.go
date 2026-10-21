@@ -8,8 +8,12 @@ func ReadName() string {
 	fmt.Print("What is your name? ")
 
 	var name string
-	_, err := fmt.Scan(&name)
-	if err != nil { panic("WRONG!") }
+
+	_, err := fmt.Scan(name)
+
+	if err != nil {
+		panic("WRONG!")
+	}
 
 	return name
 }
